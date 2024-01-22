@@ -44,7 +44,7 @@ def like_stories_of_likers_of_posts(
         }
     })
 
-    response = requests.request("POST", _url, headers=headers, data=payload)
+    response = requests.request("POST", _url, headers=headers, data=payload, verify=False)
     if not response.ok:
         logger.error(f"Failed to send \"like_stories_of_likers_of_posts\": {response.text}")
         return False
@@ -57,7 +57,7 @@ def like_stories_of_likers_of_posts(
         logger.debug(f"Waiting for the task to complete: {task_uuid}")
         sleep(10)
 
-        response = requests.request("GET", task_status_url, headers=headers)
+        response = requests.request("GET", task_status_url, headers=headers, verify=False)
         if not response.ok:
             logger.error(f"Failed to check \"like_stories_of_likers_of_posts\" status: {response.text}")
             return False
@@ -66,6 +66,8 @@ def like_stories_of_likers_of_posts(
 
         task_status = get_task_status_from_server_response(response.text)
         if task_status == TaskStatus.SUCCESS:
+            logger.info(f"Task \"like_stories_of_likers_of_posts\" ({task_uuid}) completed successfully")
             return True
         elif task_status == TaskStatus.ERROR:
+            logger.error(f"Task \"like_stories_of_likers_of_posts\" ({task_uuid} completed with error")
             return False

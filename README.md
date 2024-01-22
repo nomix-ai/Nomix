@@ -3,6 +3,7 @@
 ### Installation
 1. Python 3
 2. `python3 -m pip install -r requirements.txt`
+3. Install the latest [Nomix Android app](https://drive.google.com/drive/u/0/folders/1fA84Ahwz-pGTVDaI41gHYxL4SfVsYG0L)
 
 ### Usage
 1. Set your `token` and `device_uuids` in `main.py`
