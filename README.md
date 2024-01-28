@@ -35,7 +35,7 @@ Nomix is in it's beta currently. The plans are to add more tasks:
 
 and to add some technical improvements:
 - [ ] Create a Telegram bot which will do the same as this script, but via simple settings and buttons
-- [ ] Automatics tokens generation
+- [ ] Automatic tokens generation
 - [ ] Add reports on how many and which actions (watches, likes, follows, etc.) were made by Nomix
 
 To have your fingers on the pulse, feel free to join **Nomix Beta Testers** channel in Telegram.
