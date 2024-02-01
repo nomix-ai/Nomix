@@ -1,5 +1,5 @@
 # Nomix
-Hey there! Nomix is a **new automation tool** which automates actions in Instagram (follows, likes of posts and stories, replying to new followers, etc.) also supporting IP rotation and cloned apps. The key benefit is that Nomix is completely safe and undistinguishable from human, because it does not use PC or connection to PC unlike most other services. Actions are performed directly on the phones via **Nomix Android app**.
+Hey there! Nomix is an **automation tool** which automates actions in Instagram (follows, likes of posts and stories, replying to new followers, etc.) also supporting IP rotation and cloned apps. The key benefit is that Nomix works with 1 device as easy as with 1000. This is reached by leaving behind the adb (Android Device Bridge) and PC connection at all. Instead, each device should only have the **Nomix Android app** installed. The task management is carried out by the Python script presented in this repo.
 
 <img width="1024" src="https://github.com/nomix-ai/Nomix/assets/22825859/10af07ca-0ce1-47b7-bc46-653a3ec23ad2">
 
